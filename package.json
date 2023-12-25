@@ -1,11 +1,14 @@
 {
   "name": "@quanxiaoxiao/react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "test": "jest",
     "build": "rm -rf dist && rollup --config rollup.config.mjs"
   },
   "main": "dist/index.umd.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "devDependencies": {
     "@babel/core": "^7.19.0",
     "@babel/eslint-parser": "^7.17.0",
@@ -34,7 +37,9 @@
     "react-test-renderer": "^18.2.0",
     "rollup": "^4.9.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "qs": "^6.11.2"
+  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
