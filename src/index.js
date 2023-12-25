@@ -14,10 +14,10 @@ export {
   useAction,
   useActionDo,
   useCopyText,
+  useDownLoad,
   useInterval,
   useDataListFetch,
-  useQueryString,
-  useDownLoad,
   useRect,
+  useQueryString,
   useListQueryDo,
 };

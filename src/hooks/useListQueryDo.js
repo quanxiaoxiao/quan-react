@@ -63,7 +63,7 @@ const useListQueryDo = ({
     resolve: (ret) => {
       if (handlerSaved.current) {
         const v = handlerSaved.current(ret);
-        if (!Array.isArray(v) || typeof v.count !== 'number') {
+        if (!v || !Array.isArray(v.list) || typeof v.count !== 'number') {
           throw new Error('data invalid');
         }
         setList(v.list);
