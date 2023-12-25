@@ -5,7 +5,7 @@
     "test": "jest",
     "build": "rm -rf dist && rollup --config rollup.config.mjs"
   },
-  "main": "dist/hooks.umd.js",
+  "main": "dist/index.umd.js",
   "devDependencies": {
     "@babel/core": "^7.19.0",
     "@babel/eslint-parser": "^7.17.0",
