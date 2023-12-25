@@ -3,10 +3,12 @@ import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
 
 export default {
-  input: 'src/index.js',
+  input: [
+    'src/hooks/index.js',
+  ],
   output: [
     {
-      file: 'dist/hooks.umd.js',
+      dir: 'dist/hooks/',
       format: 'umd',
       name: 'react-hooks',
       globals: {
